@@ -17,7 +17,7 @@
                 "isDefault": true
             },
             "options": {
-                "cwd": "${workspaceFolder}"
+                "cwd": "${fileDirname}"
             },
             "presentation": {
                 "reveal": "always"
