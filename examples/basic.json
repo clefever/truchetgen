@@ -1,0 +1,9 @@
+{
+	"width": 4,
+	"height": 4,
+    "showBackground": true,
+	"scaling": 0.833,
+	"tiles": [
+		{ "x": 0, "y": 0, "size": 4, "type": 2 }
+	]
+}

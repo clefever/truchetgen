@@ -7,6 +7,7 @@ import (
 )
 
 // TODO: Refactor this whole file
+// TODO: Combine models.go and tiles.go
 
 func DrawBase(canvas *svg.SVG, x int, y int, size int, invert bool) {
 	var color string

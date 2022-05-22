@@ -1,0 +1,12 @@
+{
+	"width": 3,
+	"height": 2,
+	"defaultType": 2,
+    "showBackground": true,
+	"scaling": 1.666,
+	"tiles": [
+		{ "x": 0, "y": 0, "size": 2 },
+		{ "x": 2, "y": 0, "size": 1, "type": 1 },
+		{ "x": 2, "y": 1, "size": 1 }
+	]
+}
