@@ -9,3 +9,4 @@ This library generates SVGs of the patterns using svgo.
 - [ ] Output png
 - [ ] Deduplicate SVG paths
 - [ ] Allow saving source of random generated pattern
+- [ ] Allow tile subset selection for random mode

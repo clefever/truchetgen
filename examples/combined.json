@@ -2,7 +2,7 @@
 	"width": 3,
 	"height": 2,
 	"defaultType": 2,
-    "showBackground": true,
+	"showBackground": true,
 	"scaling": 1.666,
 	"tiles": [
 		{ "x": 0, "y": 0, "size": 2 },
