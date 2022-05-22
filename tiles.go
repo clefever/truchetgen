@@ -8,20 +8,6 @@ import (
 
 // TODO: Refactor this whole file
 
-type TileSize int
-
-const (
-	Small  TileSize = 60
-	Medium TileSize = 120
-	Large  TileSize = 240
-)
-
-type Tile struct {
-	X    int
-	Y    int
-	Size TileSize
-}
-
 func DrawBase(canvas *svg.SVG, x int, y int, size int, invert bool) {
 	var color string
 	if invert {
@@ -123,7 +109,7 @@ func Tile6(canvas *svg.SVG, x int, y int, size int, invert bool) {
 	canvas.Arc(x+size/2, y+size-size/4, size/4, size/4, 0, false, false, x+size/4, y+size/2, style)
 	canvas.Arc(x+size/2, y+size/4, size/4, size/4, 0, false, true, x+size/4, y+size/2, style)
 	canvas.Arc(x+size/2, y+size-size/4, size/4, size/4, 0, false, true, x+size-size/4, y+size/2, style)
-	canvas.Circle(x+size/2, y+size/2, size/12, "fill:black")
+	canvas.Circle(x+size/2, y+size/2, size/12, fmt.Sprintf("fill:%s", color))
 	DrawDots(canvas, x, y, size, invert)
 }
 
