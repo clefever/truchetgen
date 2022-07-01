@@ -102,9 +102,11 @@ func (t *Tile) offset(maxSize int) int {
 	}
 
 	offset := maxSize * tileMultiplier / 8
+	adder := offset
 
 	for i := 0; i < diff-1; i++ {
-		offset += int(float64(offset) * 0.5)
+		adder /= 2
+		offset += adder
 	}
 
 	return offset
